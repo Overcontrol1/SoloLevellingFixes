@@ -1,5 +1,5 @@
 plugins {
-    id "dev.architectury.loom" version "1.2-SNAPSHOT"
+    id "dev.architectury.loom" version "1.10-SNAPSHOT"
     id "maven-publish"
 }
 
@@ -21,7 +21,7 @@ loom {
         // specify the mixin configs used in this mod
         // this will be added to the jar manifest as well!
         mixinConfigs = [
-                "examplemod.mixins.json"
+                "solo_levelling_fix.mixins.json"
         ]
 
         // missing access transformers?
@@ -78,11 +78,12 @@ dependencies {
 processResources {
     // define properties that can be used during resource processing
     inputs.property "version", project.version
+    inputs.property "mod_id", project.mod_id
 
     // this will replace the property "${version}" in your mods.toml
     // with the version you've defined in your gradle.properties
     filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+        expand "version": project.version, "mod_id": project.mod_id
     }
 }
 
