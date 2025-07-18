@@ -34,7 +34,6 @@ This is a very cool mod that does... things.
 
 Have I reached 280 characters yet?
 '''
-
 # An (optional) dependency for your mod. Though technically not required,
 # it's always helpful to add these to stop your mod from loading when something is missing
 # rather than erroring out later
@@ -57,5 +56,5 @@ side = "BOTH"
 modId = "sololeveling"
 mandatory = true
 versionRange = "[0.10,)"
-ordering = "NONE"
+ordering = "AFTER"
 side = "BOTH"

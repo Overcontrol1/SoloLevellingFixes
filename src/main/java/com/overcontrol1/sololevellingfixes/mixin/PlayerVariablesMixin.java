@@ -8,6 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.solocraft.network.SololevelingModVariables;
 import org.spongepowered.asm.mixin.Mixin;
 
+
 @Mixin(value = SololevelingModVariables.PlayerVariables.class, remap = false)
 public class PlayerVariablesMixin {
     @WrapMethod(method = "syncPlayerVariables")
