@@ -2,7 +2,6 @@ package com.overcontrol1.sololevellingfixes;
 
 import cpw.mods.modlauncher.LaunchPluginHandler;
 import cpw.mods.modlauncher.Launcher;
-import cpw.mods.modlauncher.api.NamedPath;
 import cpw.mods.modlauncher.serviceapi.ILaunchPluginService;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Handle;
@@ -26,14 +25,14 @@ public class SoloLevelingOptionalTransformer implements ILaunchPluginService {
 
     }
 
-    @Override
-    public void initializeLaunch(ITransformerLoader transformerLoader, NamedPath[] specialPaths) {
-        try {
-            Files.delete(Path.of("solocraft_classes.txt"));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+//    @Override
+//    public void initializeLaunch(ITransformerLoader transformerLoader, NamedPath[] specialPaths) {
+//        try {
+//            Files.delete(Path.of("solocraft_classes.txt"));
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
     @Override
     public String name() {
