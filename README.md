@@ -1,11 +1,10 @@
 # Solo Levelling Fixes
-<hr>
+
 
 Fixes bug(/s) with the [Solo Leveling Reawakening](https://www.curseforge.com/minecraft/mc-mods/solo-craft-reawakening)
 mod for Forge 1.20.1
 
 ## About
-<hr>
 
 *Some light technical stuff ahead. Nothing too bad.*
 
@@ -45,7 +44,6 @@ The mod also bypasses a few redundant steps in the syncing of these packets, res
 I might've done this in an incompatible and definitely thread-unsafe way. I don't know, if I'm honest.
 
 ## Effect
-<hr>
 
 Without this mod, the base mod can allocate up to ~300MB of absolute useless trash before garbage collection.
 Memory allocation is slow, and allocating that much memory for no gain is just... pointless.
@@ -54,7 +52,6 @@ I don't know how much it is with this mod, but it's nowhere even in that ballpar
 I haven't actually tested, but this mod shouldn't cause any issues. It's pretty much free.
 
 ## Compatibility
-<hr>
 
 No idea. Should probably be fine as long as no other mod is touching the same stuff this one touches (obviously).
 
@@ -63,7 +60,6 @@ This mod is a little obtrusive, it modifies a lot of the original mod's classes.
 **Any mod that doesn't explicitly touch Solo Leveling Reawakening should be 100% compatible, always.**
 
 ## FAQ
-<hr>
 
 **DISCLAIMER: Not a single individual has ever asked me any one of these questions.**
 
