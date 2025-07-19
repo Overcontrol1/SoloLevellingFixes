@@ -1,8 +1,7 @@
 # MCreator Memory Fix
 
 
-Fixes bug(/s) with the [Solo Leveling Reawakening](https://www.curseforge.com/minecraft/mc-mods/solo-craft-reawakening)
-mod for Forge 1.20.1
+Fixes a large memory allocation bug in MCreator for Forge 1.20.1
 
 ## About
 
@@ -26,26 +25,12 @@ objects are getting created. This leads to high memory allocation rates for no r
 So... how about instead of creating a whole new variables object
 every time we wanna just grab it from the player, we... just... don't? That's what this mod does.
 
-This mod transforms all the Solo Leveling classes to use my singleton default.
-
 **There is no functional difference between creating a whole
 new object and just using my singleton.**
 
-***A little extra...***
-
-Without this mod, the server creates and sends way too many sync packets.
-This isn't as big an issue as the main one, but I solved* it anyway.
-This issue scales linearly with the amount of players.
-
-This mod limits player sync packets to once per tick, per entity. This results in far fewer packets being sent total.
-
-The mod also bypasses a few redundant steps in the syncing of these packets, resulting in even less memory allocation.
-
-I might've done this in an incompatible and definitely thread-unsafe way. I don't know, if I'm honest.
-
 ## Effect
 
-Without this mod, the base mod can allocate up to ~300MB of absolute useless trash before garbage collection.
+Without this mod, some MCreator mods can allocate up to ~300MB of absolute useless trash before garbage collection.
 Memory allocation is slow, and allocating that much memory for no gain is just... pointless.
 I don't know how much it is with this mod, but it's nowhere even in that ballpark. And I'm not bothered to check properly.
 
@@ -57,16 +42,11 @@ No idea. Should probably be fine as long as no other mod is touching the same st
 
 This mod is a little obtrusive, it modifies a lot of the original mod's classes.
 
-**Any mod that doesn't explicitly touch Solo Leveling Reawakening should be 100% compatible, always.**
+**Any mod that doesn't explicitly touch MCreator mods should be 100% compatible, always.**
 
 ## FAQ
 
 **DISCLAIMER: Not a single individual has ever asked me any one of these questions.**
-
-
-> Why is the name of this mod spelled differently to the main mod?
-
-*Because I spell it this way. And I don't want to hear another word about it. Leave me alone.*
 
 > You seem really cool. Can you be my friend?
 
