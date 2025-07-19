@@ -1,4 +1,4 @@
-# Solo Levelling Fixes
+# MCreator Memory Fix
 
 
 Fixes bug(/s) with the [Solo Leveling Reawakening](https://www.curseforge.com/minecraft/mc-mods/solo-craft-reawakening)
