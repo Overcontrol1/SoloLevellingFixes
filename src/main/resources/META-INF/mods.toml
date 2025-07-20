@@ -14,30 +14,26 @@ modId = "${mod_id}"
 # The version number of the mod - unlike in the Forge MDK,
 # we'll use the processResources task to replace this for us
 version = "${version}"
-displayName = "Solo Levelling Fixes"
+displayName = "MCreator Memory Fix"
 # This URL will be queried by the Forge update checker in order to find the latest version of your mod.
 # If an update is found, you'll see a little blinking "emerald" symbol on your Mods button!
 # updateJSONURL="https://changeme.dev/updates.json" #optional
 # This is your mod's "homepage" and will be displayed on the mod's information screen in the Mods panel.
-# displayURL="https://changeme.dev/" #optional
+ displayURL="https://github.com/Overcontrol1/MCreatorMemFix" #optional
 # This will be displayed as your mod's logo in the Mods panel.
-# logoFile="icon.png" #optional
+ logoFile="icon.png" #optional
 # Some more fluff displayed in the Mods panel. Feel free to issue your special thanks here!
 # credits="Thanks to Mojang for making this great game" #optional
 # Some more fluff displayed in the Mods panel. Plug your stuff here!
-# authors="Me!" #optional
+ authors="Overcontrol1" #optional
 # A multi-line description for your mod. This has no minimum length, but it *is* required!
 description = '''
-This is a very cool mod that does... things.
-
-...and stuff.
-
-Have I reached 280 characters yet?
+Fixes a large memory allocation bug in MCreator for Forge 1.20.1.
 '''
 # An (optional) dependency for your mod. Though technically not required,
 # it's always helpful to add these to stop your mod from loading when something is missing
 # rather than erroring out later
-[[dependencies.solo_levelling_fixes]]
+[[dependencies.mcreator_mem_fix]]
 modId = "forge"
 mandatory = true # do you **need** this mod to be able to launch?
 versionRange = "[44,)" # This essentially means any forge >= 43
@@ -45,16 +41,9 @@ ordering = "NONE" # Use this if you want your mod to be loaded specifically BEFO
 side = "BOTH" # Specify where this mod is required: can be BOTH, CLIENT or SERVER
 
 # And another dependency, use this if you want to require a certain Minecraft version.
-[[dependencies.solo_levelling_fixes]]
+[[dependencies.mcreator_mem_fix]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1]"
 ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.solo_levelling_fixes]]
-modId = "sololeveling"
-mandatory = true
-versionRange = "[0.10,)"
-ordering = "AFTER"
 side = "BOTH"

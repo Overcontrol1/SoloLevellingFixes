@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.overcontrol1.mcreatormemfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "com.overcontrol1.mcreatormemfix.MCreatorMemFixMixinConfigPlugin",
+  "mixins": [
+
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

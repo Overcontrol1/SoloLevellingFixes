@@ -1,4 +1,4 @@
-package com.overcontrol1.sololevellingfixes;
+package com.overcontrol1.mcreatormemfix;
 
 import sun.misc.Unsafe;
 

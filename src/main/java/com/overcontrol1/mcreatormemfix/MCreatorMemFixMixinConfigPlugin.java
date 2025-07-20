@@ -1,5 +1,6 @@
-package com.overcontrol1.sololevellingfixes;
+package com.overcontrol1.mcreatormemfix;
 
+import com.overcontrol1.mcreatormemfix.asm.MCreatorVariableTransformer;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -7,11 +8,11 @@ import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import java.util.List;
 import java.util.Set;
 
-public class SoloLevellingFixesMixinConfigPlugin implements IMixinConfigPlugin {
+public class MCreatorMemFixMixinConfigPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String s) {
         try {
-            SoloLevelingOptionalTransformer.inject();
+            MCreatorVariableTransformer.inject();
         } catch (Throwable e) {
             throw new RuntimeException(e);
         }
