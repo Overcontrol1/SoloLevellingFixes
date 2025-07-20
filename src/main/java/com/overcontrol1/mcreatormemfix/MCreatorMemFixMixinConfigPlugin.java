@@ -24,7 +24,7 @@ public class MCreatorMemFixMixinConfigPlugin implements IMixinConfigPlugin {
     }
 
     @Override
-    public boolean shouldApplyMixin(String s, String s1) {
+    public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         return true;
     }
 

@@ -1,7 +1,7 @@
 # MCreator Memory Fix
 
 
-Fixes a large memory allocation bug in MCreator for Forge 1.20.1
+Fixes a large memory allocation bug in MCreator for Forge 1.20.1.
 
 ## About
 
@@ -34,7 +34,7 @@ Without this mod, some MCreator mods can allocate up to ~300MB of absolute usele
 Memory allocation is slow, and allocating that much memory for no gain is just... pointless.
 I don't know how much it is with this mod, but it's nowhere even in that ballpark. And I'm not bothered to check properly.
 
-I haven't actually tested, but this mod shouldn't cause any issues. It's pretty much free.
+I haven't actually tested, but this mod shouldn't cause many issues. It's pretty much free.
 
 ## Compatibility
 
@@ -48,6 +48,16 @@ This mod is a little obtrusive, it modifies a lot of the original mod's classes.
 
 **DISCLAIMER: Not a single individual has ever asked me any one of these questions.**
 
+> How do I make it work for an MCreator mod?
+
+*Upon running the game, a file in 
+the config directory (.minecraft/config) will be created. 
+After this file is created, you should restart the game to ensure the detected MCreator mods are changed.
+After adding new MCreator mods, you should delete this file so the mod rescans your mods.
+A message is logged when the mod scans for MCreator mods.*
+
+**Modpack developers may safely redistribute this config file, preventing the end user from having to restart their game.**
+
 > You seem really cool. Can you be my friend?
 
 *No.*
@@ -55,3 +65,4 @@ This mod is a little obtrusive, it modifies a lot of the original mod's classes.
 > Can I use this in a modpack?
 
 *Why do people even ask this? Yes.*
+
