@@ -1,7 +1,6 @@
 # MCreator Memory Fix
 
-
-Fixes a large memory allocation bug in MCreator for Forge 1.20.1.
+Fixes a large memory allocation bug in MCreator for Forge 1.20.1. Detects mods on first startup, then a restart is required.
 
 ## About
 
