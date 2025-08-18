@@ -27,7 +27,6 @@ public class MCreatorVariableTransformer implements ILaunchPluginService {
     private static final Map<String, VariableTransformationProfile> storageProfiles = new Object2ObjectArrayMap<>();
 
     private static final String STORAGE_INTERNAL_CLASS_NAME = "com/overcontrol1/mcreatormemfix/MCreatorPlayerVariablesStorage";
-
     public static final Path CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("mcreator_mem_fix.json");
 
     public static boolean NEEDS_SCANNING = false;
@@ -196,7 +195,8 @@ public class MCreatorVariableTransformer implements ILaunchPluginService {
         }
 
         throw new IllegalStateException("Something went wrong. Tried to get a generated variable storage when none existed for "
-                + chosenEntry.packageName() + ". This might mean a malformed config.");
+                + chosenEntry.packageName() + ". This might mean a malformed config. Loaded config: %s, template profiles: %s"
+                .formatted(modEntries, storageProfiles));
     }
 
     private void generate(ModConfigEntry entry) {

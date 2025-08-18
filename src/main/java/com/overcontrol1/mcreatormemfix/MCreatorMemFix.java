@@ -45,11 +45,11 @@ public class MCreatorMemFix {
                 Class<?> clazz = mod.getClass();
                 String simpleName = clazz.getSimpleName();
                 String packageName = clazz.getPackageName();
-                String variablePackageName = packageName + ".network." + simpleName + "Variables";
+                String variableClassName = packageName + ".network." + simpleName + "Variables$PlayerVariables";
 
                 try {
                     MixinService.getService()
-                            .getBytecodeProvider().getClassNode(variablePackageName);
+                            .getBytecodeProvider().getClassNode(variableClassName);
 
                     String simpleNameWithoutMod = simpleName.substring(0, simpleName.length() - 3);
 

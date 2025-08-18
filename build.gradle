@@ -64,10 +64,12 @@ dependencies {
     forge "net.minecraftforge:forge:${project.forge_version}"
 
     // Testing Mods
-    modImplementation "curse.maven:solo-craft-reawakening-1003429:6643921"
-    modImplementation "dev.kosmx.player-anim:player-animation-lib-forge:${project.player_anim_version}"
-    modImplementation "software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}"
-    forgeRuntimeLibrary implementation("com.eliotlash.mclib:mclib:20")
+//    modImplementation "curse.maven:solo-craft-reawakening-1003429:6643921"
+//    modImplementation "dev.kosmx.player-anim:player-animation-lib-forge:${project.player_anim_version}"
+//    modImplementation "software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}"
+//    forgeRuntimeLibrary implementation("com.eliotlash.mclib:mclib:20")
+//
+//    modImplementation("curse.maven:untagged-mobs-1303225:6806885")
 
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
